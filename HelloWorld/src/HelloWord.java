@@ -1,18 +1,24 @@
 
 public class HelloWord {
 
-	static int counter = 0;
+	static int counter = 1;
 	
 	
 	public static void main(String[] args) {
 		
 		
-		while(counter<100){
-		if(counter%5==0) {System.out.println("hello Bäm!");}
-	    	else{System.out.println("HelloWorld");}
-	System.out.println(counter);
-	counter++;
-	}
+	while(counter<=100) {
+		if(counter%3==0 && counter%5==0) {
+			System.out.println("FizzBuzz");}
+		   else {
+		
+		     if(counter%3==0) {System.out.println("Fizz");}
+		       else {if(counter%5==0) {System.out.println("Buzz");}
+	    	     else{System.out.println(counter);}
+		       }
 
- }
+      }
+		 	counter++;
+     }
+	}
 }
